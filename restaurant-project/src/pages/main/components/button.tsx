@@ -1,5 +1,6 @@
 import '@fontsource/poppins/400.css';
 import Typography from '@mui/material/Typography';
+import './button.css'
 
 interface ButtonProps {
     text: string
@@ -7,7 +8,7 @@ interface ButtonProps {
 
 const Button = ({text}: ButtonProps) => {
     return (
-        <button className="button" style={{ backgroundColor: 'transparent', margin: '10px' }}>
+        <button className="button">
             <Typography variant="h6" style={{ fontFamily: 'Poppins'}}>
                 {text}
             </Typography>
