@@ -4,11 +4,12 @@ import './button.css'
 
 interface ButtonProps {
     text: string
+    onClick: () => void
 }
 
 const Button = ({text}: ButtonProps) => {
     return (
-        <button className="button">
+        <button className="button" onClick={() => {}}>
             <Typography variant="h6" style={{ fontFamily: 'Poppins'}}>
                 {text}
             </Typography>

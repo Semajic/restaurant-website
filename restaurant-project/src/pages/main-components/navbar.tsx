@@ -1,0 +1,38 @@
+import { Grid } from "@mui/material";
+import Button from "../main/components/button";
+import '../main/main.css';
+import { useNavigate } from "react-router-dom";
+
+const poppinsBold = { fontWeight: 800 };
+
+export function Navbar() {
+    const navigate = useNavigate(); // <-- Move this inside the component
+
+    return (
+        <Grid container alignItems="center" width="100%" height="100%">
+            <Grid size={6} display="flex" alignItems="center" justifyContent="flex-start" padding="0 3%">
+                <div className="h3" style={{marginRight: '3%'}}>
+                    {'{'}
+                </div>
+                <div className="h4" style={poppinsBold}>
+                    <span style={{ color: 'white' }}>Studio</span>
+                    <span style={{ color: '#7C3AED' }}> Null</span>
+                </div>
+            </Grid>
+            <Grid size={6} display="flex" alignItems="center" justifyContent="flex-end" padding="0 3%">
+                <div className="h3">
+                    {'{'}
+                </div>
+
+                <Button text="Our Menu" onClick={() => navigate('/menu')} />
+                <Button text="Gallery" onClick={() => navigate('/gallery')} />
+                <Button text="Book a Table" onClick={() => navigate('/booking')} />
+                <Button text="About Us" onClick={() => navigate('/about')} />
+                    
+                <div className="h3">
+                    {'}'}
+                </div>
+            </Grid>
+        </Grid>
+    );
+}
