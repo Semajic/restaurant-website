@@ -1,4 +1,4 @@
-import { Navbar } from '../main-components/navbar';
+import  Navbar from '../main-components/navbar';
 import { Footer }  from '../main-components/footer';
 import '@fontsource/poppins/400.css';
 import '@fontsource/poppins/500.css';
@@ -11,7 +11,9 @@ import '../../App.css';
 
 import Typewriter from 'typewriter-effect';
 
-const Main = () => (
+const Main = () => {
+
+    return (
     <div className="container">
 
     {/* Navbar */}
@@ -39,5 +41,5 @@ const Main = () => (
         </div>
     </div>
 );
-
+}
 export default Main;

@@ -1,12 +1,12 @@
 import { Grid } from "@mui/material";
 import Button from "../main/components/button";
 import '../main/main.css';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const poppinsBold = { fontWeight: 800 };
 
-export function Navbar() {
-    const navigate = useNavigate(); // <-- Move this inside the component
+const Navbar = () => {
+    const navigate = useNavigate(); // Use the hook inside the component
 
     return (
         <Grid container alignItems="center" width="100%" height="100%">
@@ -14,7 +14,7 @@ export function Navbar() {
                 <div className="h3" style={{marginRight: '3%'}}>
                     {'{'}
                 </div>
-                <div className="h4" style={poppinsBold}>
+                <div className="h4" style={{...poppinsBold, cursor: 'pointer'}} onClick={() => navigate('/')}>
                     <span style={{ color: 'white' }}>Studio</span>
                     <span style={{ color: '#7C3AED' }}> Null</span>
                 </div>
@@ -26,9 +26,9 @@ export function Navbar() {
 
                 <Button text="Our Menu" onClick={() => navigate('/menu')} />
                 <Button text="Gallery" onClick={() => navigate('/gallery')} />
-                <Button text="Book a Table" onClick={() => navigate('/booking')} />
+                <Button text="Book a Table" onClick={() => navigate('/book')} />
                 <Button text="About Us" onClick={() => navigate('/about')} />
-                    
+
                 <div className="h3">
                     {'}'}
                 </div>
@@ -36,3 +36,5 @@ export function Navbar() {
         </Grid>
     );
 }
+
+export default Navbar

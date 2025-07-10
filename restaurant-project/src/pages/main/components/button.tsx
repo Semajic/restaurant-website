@@ -7,9 +7,9 @@ interface ButtonProps {
     onClick: () => void
 }
 
-const Button = ({text}: ButtonProps) => {
+const Button = ({ text, onClick }: ButtonProps) => {
     return (
-        <button className="button" onClick={() => {}}>
+        <button className="button" onClick={onClick}>
             <Typography variant="h6" style={{ fontFamily: 'Poppins'}}>
                 {text}
             </Typography>
