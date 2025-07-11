@@ -7,14 +7,14 @@ import { Grid } from '@mui/material';
 const Menu = () => {
 
     return (
-        <div className="container" style={{ backgroundColor: '#121212' }}>
+        <div className="container">
             <div className="navbar">
                 <Navbar />
             </div>
 
-            <Grid container spacing={2} alignItems="center" justifyContent="center" width="100%" height="90%" flexDirection="column">
+            <div className="menu-container">
                 <div className="h3">
-                    <span style={{ marginRight: '5%' }}>
+                    <span style={{ marginRight: '15%' }}>
                         {'{'}
                     </span>
                     <span>
@@ -23,17 +23,23 @@ const Menu = () => {
                 </div>
                 <Grid container spacing={2} alignItems="center" justifyContent="center" flexDirection="row" width="80%">
                     <Grid size={6} display="flex" alignItems="center" justifyContent="center" padding="0 3%">
-                        <div className="h4consolas">
+                        <div className="h5consolas">
                             Byte-Sized Bruschetta
                         </div>
                     </Grid>
                     <Grid size={6} display="flex" alignItems="center" justifyContent="center" padding="0 3%">
-                        <div className="h4consolas">
-                            Baked Brie with Fig Jam
+                        <div className="h5consolas">
+                            RAM Tartare
                         </div>
                     </Grid>
+                    <Grid size={6} display="flex" alignItems="center" justifyContent="center" padding="0 3%">
+                        <div className="h5consolas">
+                            Null Pointer Soup
+                        </div>
+                    </Grid>
+                    <Grid size={6} display="flex" alignItems="center" justifyContent="center" padding="0 3%"/>
                 </Grid>
-            </Grid>
+            </div>
             <div className="footer">
                 <Footer />
             </div>

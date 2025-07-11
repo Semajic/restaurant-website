@@ -1,7 +1,20 @@
-.h4consolas {
+.h5consolas {
     font-size: 1.5rem;
     color: white;
     font-family: Consolas;
     font-weight: 600;
     text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 10vw;
+    margin-bottom: 10vh;
+    border-radius: 10px;
 }
