@@ -1,6 +1,14 @@
 .h5consolas {
     font-size: 1.5rem;
-    color: white;
+    color: lightgray;
+    font-family: Consolas;
+    font-weight: 600;
+    text-align: center;
+}
+
+.h6consolas {
+    font-size: 1.2rem;
+    color: darkgray;
     font-family: Consolas;
     font-weight: 600;
     text-align: center;
