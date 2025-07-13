@@ -1,5 +1,3 @@
-import  Navbar from '../main-components/navbar';
-import { Footer }  from '../main-components/footer';
 import '@fontsource/poppins/400.css';
 import '@fontsource/poppins/500.css';
 import '@fontsource/poppins/600.css';
@@ -14,14 +12,6 @@ import Typewriter from 'typewriter-effect';
 const Main = () => {
 
     return (
-    <div className="container">
-
-    {/* Navbar */}
-        <div className="navbar">
-            <Navbar />
-        </div>
-
-    {/* Typewriter */}
         <div className="typewriter">
             <div style={{marginBottom: '7%'}}>
                 <Typewriter
@@ -33,13 +23,6 @@ const Main = () => {
                 />
             </div>
         </div>
-        
-        
-    {/* Footer */}
-        <div className="footer">
-            <Footer />
-        </div>
-    </div>
-);
+    );
 }
 export default Main;

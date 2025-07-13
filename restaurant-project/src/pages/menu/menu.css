@@ -1,6 +1,6 @@
 .h5consolas {
     font-size: 1.5rem;
-    color: lightgray;
+    color: white;
     font-family: Consolas;
     font-weight: 600;
     text-align: center;
@@ -10,8 +10,13 @@
     font-size: 1.2rem;
     color: darkgray;
     font-family: Consolas;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
+}
+
+.purple-bracket {
+    color: #7C3AED;
+    font-weight: bold;
 }
 
 .menu-container {
@@ -19,10 +24,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    width: 80vw;
+    padding: 5%;
     background-color: rgba(0, 0, 0, 0.8);
-    margin-left: 10vw;
     margin-bottom: 10vh;
     border-radius: 10px;
+    animation: menu-container 0.5s ease-in-out;
+}
+
+@keyframes menu-container {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }

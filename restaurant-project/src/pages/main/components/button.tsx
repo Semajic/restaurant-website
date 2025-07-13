@@ -1,6 +1,5 @@
-import '@fontsource/poppins/400.css';
-import Typography from '@mui/material/Typography';
 import './button.css'
+import '../../../App.css'
 
 interface ButtonProps {
     text: string
@@ -9,11 +8,11 @@ interface ButtonProps {
 
 const Button = ({ text, onClick }: ButtonProps) => {
     return (
-        <button className="button" onClick={onClick}>
-            <Typography variant="h6" style={{ fontFamily: 'Poppins'}}>
+        <div className="hover-underline" onClick={onClick}>
+            <div className="h5">
                 {text}
-            </Typography>
-        </button>
+            </div>
+        </div>
     );
 };
 
