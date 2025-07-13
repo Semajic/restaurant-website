@@ -1,7 +1,7 @@
 import './gallery.css';
 import '../../App.css'
 import { Grid } from '@mui/material';
-import galleryImages from './components/galleryImages';
+//import galleryImages from './components/galleryImages';
 
 const Gallery = () => {
     return (
