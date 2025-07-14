@@ -7,12 +7,14 @@ const iconStyle = { fontSize: 30, margin: 10 };
 const grayText = { fontFamily: 'consolas', color: 'darkgray', marginBottom: '2.5%' };
 const underlineText = { textDecoration: 'underline' };
 
+const gridSpecs = { xs: 12, sm: 12, md: 12, lg: 4 };
+
 export function Footer(){
     return (
-        <Grid container alignItems="center" justifyContent="center" width="100%" height="100%">
+        <Grid container spacing={4} alignItems="center" justifyContent="center" width="100%" height="100%">
 
         {/* Contact Info */}
-            <Grid size={4} display="flex" flexDirection="column">
+            <Grid size={gridSpecs} display="flex" flexDirection="column">
                 <div className="h4" style={{marginBottom: '2.5%'}}>
                     Contact Information
                 </div>
@@ -27,7 +29,7 @@ export function Footer(){
             </Grid>
 
         {/* Center Logo + Icons */}
-            <Grid size={4} display="flex" flexDirection="column" alignItems="center">
+            <Grid size={gridSpecs} display="flex" flexDirection="column" alignItems="center">
                 <div className="h2">
                     <span style={{ color: 'white' }}>Studio</span>
                     <span style={{ color: '#7C3AED' }}> Null</span>
@@ -40,7 +42,7 @@ export function Footer(){
             </Grid>
 
         {/* Hours */}
-            <Grid size={4} display="flex" flexDirection="column">
+            <Grid size={gridSpecs} display="flex" flexDirection="column">
                 <div className="h4" style={{marginBottom: '2.5%'}}>
                     Hours
                 </div>

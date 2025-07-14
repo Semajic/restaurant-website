@@ -36,7 +36,7 @@ const MenuSectionGrid = ({ section }: { section: MenuSection }) => (
             {section.items.map((item, index) => (
                 <Grid
                     key={index}
-                    size={6}
+                    size={{ xs: 12, sm: 6, md: 4 }}
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
